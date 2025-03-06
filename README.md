@@ -1,5 +1,8 @@
 # E-commerce Analysis and Seller Churn Prediction Model
 
+![github cover](https://github.com/user-attachments/assets/e8184c52-bb85-4288-baea-1b02d612e9d8)
+
+
 **Data Period:** September 2016 - October 2018  
 
 **Contributors:**  
@@ -7,6 +10,7 @@
 
 > [!NOTE]
 > Presentation Deck : [View the Google Slides Presentation](https://docs.google.com/presentation/d/1RXtLS-ZDupxqhABBnfjqadugFRhJX3UAFSvMGAnbRYs/edit?usp=sharing)<br>
+> Dashboard : [View Tableau](https://public.tableau.com/app/profile/glen.joy2546/viz/OlistDashboard_17407870344560/Homepage?publish=yes)<br>
 > Streamlit Deploy : [View here](https://olist-seller-churn-dashboard-team-alpha-jcds0508.streamlit.app/)
 ---
 
