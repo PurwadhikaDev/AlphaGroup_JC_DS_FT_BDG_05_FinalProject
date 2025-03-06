@@ -79,6 +79,9 @@ We have combined 8 CSV datasets into 3 focused datasets:
 | olist_sellers_dataset.csv |  |
 | product_category_name_translation |  |
 
+- The dataset represents **sales data from Olist**.  
+- Each row in the dataset corresponds to **a transaction of a product** in Olist’s partner marketplace.
+
 ### **3.1. Attributes Information**
 
 | **Attribute** | **Data Type** | **Description** |
@@ -116,6 +119,8 @@ We have combined 8 CSV datasets into 3 focused datasets:
 
 ## 4. Data Cleaning Process
 
+Here’s how we will clean the data:
+
 | **Column** | **Cleaning Method** |
 | --- | --- |
 | Product Category | Fill missing values as "Unknown" |
@@ -126,6 +131,8 @@ We have combined 8 CSV datasets into 3 focused datasets:
 | Order Delivered Customer Date | Align missing values with the estimated delivery date |
 
 ## 5. Analysis
+
+Here is the outline of the analysis :
 
 ### **5.1. Business Performance Analysis**
 - Total Profit & Revenue Trends
