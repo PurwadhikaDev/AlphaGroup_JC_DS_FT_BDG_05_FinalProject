@@ -5,9 +5,9 @@
 
 **Data Period:** September 2016 - October 2018  
 
-**Contributors:**  
-`Glen Valencius Joydi` | `Khrysna Taruna Putra` | `Daffa Dzaky Naufal`
+**Contributors:** [Glen Valencius Joydi](https://github.com/glenvj-j) | [Khrysna Taruna Putra](https://github.com/krisnatp-gh) | [Daffa Dzaky Naufal](https://github.com/Daffa281200)
 
+  
 > [!NOTE]
 > Presentation Deck : [View the Google Slides Presentation](https://docs.google.com/presentation/d/1RXtLS-ZDupxqhABBnfjqadugFRhJX3UAFSvMGAnbRYs/edit?usp=sharing)<br>
 > Dashboard : [View Tableau](https://public.tableau.com/app/profile/glen.joy2546/viz/OlistDashboard_17407870344560/Homepage?publish=yes)<br>
