@@ -158,3 +158,6 @@ We have combined 8 CSV datasets into 3 focused datasets:
 - **Planned Tool:** Streamlit (for model prediction)
 
 ---
+
+Resource :
+[Brazil Shapefiles](https://www.kaggle.com/datasets/rodsaldanha/brazilianstatesshapefiles)
