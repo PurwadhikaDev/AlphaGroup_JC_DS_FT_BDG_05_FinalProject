@@ -157,19 +157,65 @@ Here is the outline of the analysis :
 - Financial & Profitability Analysis
 - Identifying Top Sellers to Retain
 
-## 7. Modeling Introduction
-### **7.1. Understanding Churn**
-### **7.2. Label Preparation**
-### **7.3. Outlier Handling**
-### **7.4. Seller Segmentation**
+# 7. Modeling Introduction
+
+## 7.1. Understanding Churn
+
+For Olist's marketplace business model where revenue comes from sales commissions, churn is defined as a seller ceasing sales activity on the platform for an extended period. Specifically:
+
+- Churn occurs when a seller has no sales activity in the quarter following their last active quarter
+- The primary indicator of sales activity is a seller approving an order
+- Churn is considered recurring, as sellers may become inactive due to temporary factors and later return
+
+We selected quarterly measurement intervals rather than monthly to:
+1. Reduce the impact of seasonal e-commerce fluctuations
+2. Align with standard fiscal reporting periods
+3. Provide more stable data for prediction models
+
+## 7.2. Label Preparation
+
+The churn dataset was structured with each row representing an active seller in a given quarter. To determine whether a seller churned, we checked if they remained active in the subsequent quarter. This approach created a clear binary classification target variable for our model.
+
+![image](https://github.com/user-attachments/assets/fa529807-e333-4e97-92dd-fc82eb1e0b5c)
 
 
-## 8. Model Matrix and Cost Calculation
-Here for what feature we will use
+## 7.3. Outlier Handling
 
-## 9. Modeling (TBD) and result
-Here for what feature we will use
+Our analysis revealed significant right skew in several metrics (`n_orders`, `n_approved_orders`, `n_delivered_carrier`, etc.) which is common in e-commerce where high-performing sellers represent a small percentage of the overall population. These patterns represent meaningful business segments rather than errors, so we retained these outliers for modeling.
 
+For `median_review_score`, we observed left skew, likely correlating with unprofitable sellers. Only for `median_approve_time` did we remove one extreme outlier that appeared to be an anomalous data point rather than a meaningful business pattern.
+
+## 7.4. Seller Segmentation
+
+We segmented sellers into **profitable** and **unprofitable** categories based on their sales performance. This segmentation is critical as our analysis determined that unprofitable sellers should not be prioritized for churn intervention efforts. Within the profitable segment, we further classified sellers as **Top** or **Regular** based on sales volume.
+
+# 8. Cost Evaluation
+
+We developed a comprehensive cost structure to evaluate our churn prediction model, considering different costs for Top and Regular sellers:
+
+| Cost Type | Description | Top Sellers | Regular Sellers |
+|-----------|-------------|------------|----------------|
+| False Negative | Lost commission when churning seller is misclassified | R$625.0 | R$86.0 |
+| False Positive | Intervention costs for non-churning sellers | R$150.0 | R$10.0 |
+| True Positive | Net benefit of successful intervention | -R$37.0 | -R$3.0 |
+
+For Top Sellers, interventions include a 2% commission reduction, CRM support (R$36), marketing assistance (R$40), and vouchers (R$5), with an estimated 30% retention success rate. Regular Sellers receive a 1% commission reduction and vouchers, with an estimated 15% retention success rate.
+
+# 9. Modeling and Results
+
+We implemented an XGBoost classification model to predict seller churn, focusing on **Recall** as our primary metric due to the higher cost of false negatives compared to false positives. Key results include:
+
+- Model recall improved from a baseline of 0.5419 to 0.9102 through hyperparameter tuning
+- Robust performance on out-of-time data with an average recall of 0.92 across all prediction windows
+- Excellent performance for Top sellers with both high recall (0.9259) and accuracy (0.9091)
+- Solid recall for Regular sellers (0.8625) with some false positive errors
+
+The optimized model delivers significant cost efficiencies:
+- 3.25× cheaper than the base model (R$4,571 vs R$14,866)
+- 4.04× savings compared to no intervention (R$4,571 vs R$18,475)
+- 5.4× more cost-effective than blanket intervention for all top sellers (R$4,571 vs R$24,601)
+
+This demonstrates that our targeted approach to seller churn prediction and intervention can substantially reduce costs while effectively retaining valuable sellers.
 
 ## 10. Conclusion & Recommendation
 
