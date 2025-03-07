@@ -345,6 +345,39 @@ We can prioritize different product categories based on our business goals. Whet
 
 ### 10.2. Modeling
 
+#### 10.2.1. Conclusion
+
+- We segmented sellers into **profitable** and **unprofitable** categories, determining that **unprofitable sellers should not be prioritized for churn intervention efforts**.
+
+- Among profitable sellers, we further classified them as **Top** or **Regular** sellers. Top sellers are defined as those in the highest 20% of total sales (measured over the previous year) among all active sellers in a given quarter.
+
+- We developed a classification model using XGBoost to predict seller churn, using recall as our primary optimization metric due to the high cost of false negatives. **Through tuning, we improved the model's recall from a baseline of `0.5269` to `0.9132`.**
+
+- The tuned model demonstrates **robust performance on out-of-time data, achieving an average recall of 0.92 across all prediction windows**.
+
+- The optimized model achieves **high recall for both Regular (`0.8688`) and Top sellers (`0.9259`)**, though Regular sellers exhibits more false positive errors.
+
+- The model **performs exceptionally well for Top sellers, with both high recall (`0.9259`) and high accuracy (`0.9091`)**, making it particularly effective at predicting churn within this valuable segment.
+
+- **Our tuned model delivers significant cost efficiencies across multiple comparison scenarios**: it reduces total costs from R$22,214 to R$6,204 compared to the base model (**3.6x cheaper**), outperforms using no intervention (R$30,635 vs R$6,204, representing **4.9x savings**), and proves far more cost-effective than blanket intervention for all top sellers (R$36,761 vs R$6,204, or **5.9x cheaper**).
+
+
+#### 10.2.1. Recommendations
+
+- Prioritize top sellers with our model, as its performance suggests targeting will be applied effectively.
+
+- Consider reducing incentives for regular sellers below initial cost assumptions, given the model's higher false positive rate in this segment.
+
+- Further segment regular sellers to address the notable false positive errors within this group. Develop tailored targeting interventions for each new segment.
+
+- Direct account managers using the model to focus on the three highest-impact features: the last active month in a quarter, delivered orders per active month in that quarter, and total active months in that quarter.
+
+- Initiate cross-departmental discussions on retention strategies for priority sellers.
+
+- Validate the model quarterly and re-train with new data to maintain model quality.
+
+- Conduct economic evaluations of the model's performance after retention campaign to measure ROI and business impact.
+
 
 ---
 
