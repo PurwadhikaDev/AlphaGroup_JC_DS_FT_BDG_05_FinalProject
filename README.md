@@ -194,7 +194,7 @@ Following the churn labeling process, we engineered additional features to creat
 
 **Performance indicators:**
 - **`sales`**: Gross quarterly revenue generated before platform commission (denominated in R$)
-- **`median_approve_time`**: Median time interval between order receipt and seller approval
+- **`median_approve_time`**: Median time interval between an order and seller approval (minutes)
 - **`median_review_score`**: Median customer satisfaction rating on a scale of 0-5
 
 **Seller characteristics:**
