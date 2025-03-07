@@ -5,7 +5,7 @@
 
 **Data Period:** September 2016 - October 2018  
 
-**Contributors:** [Glen Valencius Joydi](https://github.com/glenvj-j) | [Khrysna Taruna Putra](https://github.com/krisnatp-gh) | [Daffa Dzaky Naufal](https://github.com/Daffa281200)
+**Contributors:** [Glen Valencius Joydi](https://github.com/glenvj-j) | [Khrysna Taruna Putra](https://github.com/krisnatp-gh) | [Daffa Dzaky Naufal]([https://github.com/Daffa281200](https://github.com/daffa-dzn))
 
   
 > [!NOTE]
