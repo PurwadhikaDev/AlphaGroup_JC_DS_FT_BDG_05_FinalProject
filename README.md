@@ -364,7 +364,7 @@ We can prioritize different product categories based on our business goals. Whet
 
 #### 10.2.1. Recommendations
 
-- Prioritize top sellers with our model, as its performance suggests targeting will be applied effectively.
+- Deploy a tiered intervention strategy, prioritizing top sellers with our model, as its performance suggests targeting will be applied effectively.
 
 - Consider reducing incentives for regular sellers below initial cost assumptions, given the model's higher false positive rate in this segment.
 
