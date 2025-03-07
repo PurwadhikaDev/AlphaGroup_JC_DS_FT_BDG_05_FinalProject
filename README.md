@@ -172,7 +172,7 @@ We selected quarterly measurement intervals rather than monthly to:
 2. Align with standard fiscal reporting periods
 3. Provide more stable data for prediction models
 
-## 7.2. Label Preparation
+## 7.2. Label and Churn Data Preparation
 
 The churn dataset was structured with each row representing an active seller in a given quarter. To determine whether a seller churned, we checked if they remained active in the subsequent quarter. This approach created a clear binary classification target variable for our model.
 
