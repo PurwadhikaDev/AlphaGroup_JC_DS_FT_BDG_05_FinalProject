@@ -231,15 +231,15 @@ For Top Sellers, interventions include a 2% commission reduction, CRM support (R
 
 We implemented an XGBoost classification model to predict seller churn, focusing on **Recall** as our primary metric due to the higher cost of false negatives compared to false positives. Key results include:
 
-- Model recall improved from a baseline of 0.5419 to 0.9102 through hyperparameter tuning
+- Model recall improved from a baseline of 0.5269 to 0.9132 through hyperparameter tuning
 - Robust performance on out-of-time data with an average recall of 0.92 across all prediction windows
+- Solid recall for Regular sellers (0.8668) with some false positive errors
 - Excellent performance for Top sellers with both high recall (0.9259) and accuracy (0.9091)
-- Solid recall for Regular sellers (0.8625) with some false positive errors
 
 The optimized model delivers significant cost efficiencies:
-- 3.25× cheaper than the base model (R$4,571 vs R$14,866)
-- 4.04× savings compared to no intervention (R$4,571 vs R$18,475)
-- 5.4× more cost-effective than blanket intervention for all top sellers (R$4,571 vs R$24,601)
+- 3.6× cheaper than the base model (R$6,204 vs R$22,214)
+- 4.9× savings compared to no intervention (R$6,204 vs R$30,365)
+- 5.9× more cost-effective than blanket intervention for all top sellers (R$6,204 vs R$36,761)
 
 This demonstrates that our targeted approach to seller churn prediction and intervention can substantially reduce costs while effectively retaining valuable sellers.
 
