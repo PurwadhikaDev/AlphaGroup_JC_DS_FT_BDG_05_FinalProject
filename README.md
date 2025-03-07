@@ -61,7 +61,7 @@ Additionally, we aim to **prevent profit loss** by detecting and addressing sell
 ### **2.4. Analytical Approach**
 We will separate our analysis into two major categories:
 - **Descriptive Analytics**: Focuses on understanding business, seller, and buyer performance.
-- **Inferential Analytics**: Focuses on modeling to predict churn for the next quarter based on seller performance from the last three months.
+- **Predictive Analytics**: Focuses on modeling to predict churn for the next quarter based on seller performance from the last three months.
 
 ## 3. Data Overview
 
