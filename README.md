@@ -171,6 +171,112 @@ Here for what feature we will use
 Here for what feature we will use
 
 
+## 10. Conclusion & Recommendation
+
+### 10.1. Analysis
+#### 10.1.1. Conclusion
+
+##### **1. Olist’s Business Performance Analysis**  
+
+- **Revenue Growth:** From 2017 to early 2018, Olist’s revenue increased by **21%**, despite the year not being complete.  
+- **Black Friday Effect:** Sales spiked significantly in **November 2017**, likely due to **Black Friday promotions**.  
+- **Seller & Buyer Growth:**  
+  - **Sellers** tend to join more at the end and start of the year.  
+  - **Buyers** also peak around **November** and at the **beginning of the year**.  
+- **Product Variety & Profitability:**  
+  - Increasing the variety of products leads to higher profits.  
+  - **Pareto Analysis:** By focusing on just **16 key categories**, we can cover **80% of net profit**.
+  
+   These categories include:  
+
+    | health_beauty | 'watches_gifts' | 'bed_bath_table' | 'sports_leisure' | 'computers_accessories' | 
+    | --- | --- | --- | --- | --- |
+    |'furniture_decor' | 'housewares' | 'cool_stuff' | 'auto' | 'toys' | 
+    | 'garden_tools' | 'baby' | 'perfumery' | 'telephony' | 'office_furniture' | 
+    | 'stationery' | 'computers'`.  
+
+**Black Friday Strategy:**  
+
+We can prioritize different product categories based on our business goals. Whether we aim to maximize overall revenue, focus on high net profit per order, or explore hidden opportunities, the table below provides clear guidance:  
+
+| **Focus on High-Profit Categories** | **Highest Net Profit per Order** | **Hidden Opportunities (Low Orders, High Profit)** |
+|---|---|---|
+| bed_bath_table                       | computers                        | computers                                      |
+| furniture_decor                      | agro_industry_and_commerce       | agro_industry_and_commerce                     |
+| sports_leisure                        | musical_instruments              | musical_instruments                            |
+| health_beauty                         | home_appliances_2                | home_appliances_2                              |
+| garden_tools                          | industry_commerce_and_business   | industry_commerce_and_business                 |
+| computers_accessories                 | furniture_bedroom                | small_appliances                               |
+| toys                                  | party_supplies                   | construction_tools_safety                      |
+| watches_gifts                         | small_appliances                 | construction_tools_lights                      |
+| housewares                            | cine_photo                       | air_conditioning                               |
+| telephony                             | construction_tools_safety        | watches_gifts                                  |
+
+
+- **Order Cancellations:** Olist’s **cancellation rate is below 1%**, which is considered acceptable.  
+
+
+---
+
+##### **2. Buyer Preferences in Shopping on Olist**  
+
+- **Basket Size & Average Order Size:**  
+  - Most buyers purchase **only 1 item per order**.  
+  - **Solution:** Implement **bundling & cross-selling** strategies to encourage multiple purchases.
+  - Average order **value 96 BR.**
+  - **Solution:** Create a coupon with a minimum order requirement
+   **Loyal & High-Spending Customers:**  
+  - By combining **loyalty (repeat purchases)** and **profitability (high spenders)**, we can target high-value customers for **personalized promotions and loyalty rewards**.  
+- **Average Buyer Spending:**  
+  - The **median spending per buyer** is **around 90**.  
+- **Best Cities for Expansion:**  
+  - Cities with **high median profit** should be prioritized for expansion.  
+- **Payment Preferences:**  
+  - **Credit cards** are the most preferred payment method.  
+  - **Opportunity:** Partnering with credit card companies for promotional discounts.  
+- **Customer Sentiment & Ratings:**  
+  - **13% of reviews** gave a rating of **1 star**, and **3% gave a 2-star rating**.  
+  - The main complaints were **product quality issues** and **delivery problems**.  
+
+---
+
+##### **3. Seller Retention & Churn Prevention Strategy**  
+
+- **Best Cities for Expansion:**  
+  - **Filtering cities** where **total orders are above median** but **total sellers are below median** helps identify areas with **high demand but few sellers**.  
+  - **Benefit:** Faster deliveries & improved customer satisfaction.  
+- **Product Category Optimization for Expansion:**  
+  - By identifying the **most ordered product categories** in potential expansion areas, we can **attract new sellers** to fulfill demand.  
+- **Seller Performance Evaluation:**  
+  - By analyzing **buyer ratings**, we can identify **underperforming sellers** for evaluation and guidance.  
+  - Sellers with **high late deliveries & cancellations** should be prioritized for **further investigation**.  
+- **Seller Profitability Analysis:**  
+  - **Strategy 1:** Focus on sellers with **high net profit per order** and at least **2+ orders**, ensuring long-term profitability.  
+  - **Strategy 2:** Focus on sellers with **one-time high-profit orders**, analyzing if their product category is **niche or repeatable**.  
+  - **Next Step:** Decide on the **long-term seller retention strategy** based on these insights.  
+
+#### 10.1.2. Recommendation
+1. **Prepare for Black Friday (November 2018)**  
+   - Focus on high-performing product categories listed in the previous analysis to maximize sales potential.  
+
+2. **Increase Bucket Size**  
+   - Encourage larger purchases by offering **bundled deals** or **discounted add-ons**.  
+
+3. **Expand Seller Network in High-Demand Areas**  
+   - Identify regions with **high order volume but few sellers** and recruit new sellers to improve delivery speed and customer satisfaction.  
+
+4. **Collaborate with Credit Card Companies**  
+   - Partner with banks to offer **exclusive promotions** for credit card users, incentivizing more purchases.  
+
+5. **Support Low-Rated Sellers**  
+   - Provide **training or guidance** to sellers receiving consistently low ratings to improve product quality and service. 
+
+### 10.2. Modeling
+
+
+---
+
+
 ## 10. Deployment
 
 We deployed this model using Streamlit to assist Account Managers (B2B Seller Relations) in identifying and prioritizing sellers at risk of churn.
