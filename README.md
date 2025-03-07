@@ -157,12 +157,26 @@ Here is the outline of the analysis :
 - Financial & Profitability Analysis
 - Identifying Top Sellers to Retain
 
-## 6. Feature Engineering (TBD)
+## 7. Modeling Introduction
+### **7.1. Understanding Churn**
+### **7.2. Label Preparation**
+### **7.3. Outlier Handling**
+### **7.4. Seller Segmentation**
 
-## 7. Modeling (TBD)
 
-## 8. Deployment (TBD)
-- **Planned Tool:** Streamlit (for model prediction)
+## 8. Model Matrix and Cost Calculation
+Here for what feature we will use
+
+## 9. Modeling (TBD) and result
+Here for what feature we will use
+
+
+## 10. Deployment
+
+We deployed this model using Streamlit to assist Account Managers (B2B Seller Relations) in identifying and prioritizing sellers at risk of churn.
+By uploading quarterly data, the model predicts whether a seller is likely to churn or not. <br> The results can be downloaded based on priority levels, highlighting **Top Priority Sellers** (high-value sellers at risk of churn) and **Standard Priority Sellers** (moderate-value sellers at risk of churn).
+
+Streamlit Deploy : [View here](https://olist-seller-churn-dashboard-team-alpha-jcds0508.streamlit.app/)
 
 ---
 
