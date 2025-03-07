@@ -277,7 +277,7 @@ We can prioritize different product categories based on our business goals. Whet
 ---
 
 
-## 10. Deployment
+## 11. Deployment
 
 We deployed this model using Streamlit to assist Account Managers (B2B Seller Relations) in identifying and prioritizing sellers at risk of churn.
 By uploading quarterly data, the model predicts whether a seller is likely to churn or not. <br> The results can be downloaded based on priority levels, highlighting **Top Priority Sellers** (high-value sellers at risk of churn) and **Standard Priority Sellers** (moderate-value sellers at risk of churn).
