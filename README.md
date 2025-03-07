@@ -178,6 +178,32 @@ The churn dataset was structured with each row representing an active seller in 
 
 ![image](https://github.com/user-attachments/assets/fa529807-e333-4e97-92dd-fc82eb1e0b5c)
 
+Following the churn labeling process, we engineered additional features to create a comprehensive dataset for modeling seller churn:
+
+- **`year`** and **`quarter`**: Temporal identifiers indicating the specific period of seller activity
+- **`seller_id`**: Unique identifier assigned to each seller on the platform
+- **`is_churn`**: Binary target variable (1 = churned, 0 = retained) indicating whether the seller remained active in the following quarter
+
+**Order fulfillment metrics:**
+- **`n_orders`**: Total count of unique orders received during the quarter
+- **`n_approved_orders`**: Count of orders that received seller approval for processing
+- **`n_delivered_carrier`**: Count of orders successfully transferred to logistics carriers
+- **`n_orders_late_to_carrier`**: Count of orders delivered to carriers after the scheduled timeframe
+- **`n_delivered_customers`**: Count of orders successfully delivered to end customers
+- **`n_orders_late_to_customer`**: Count of orders that reached customers after the promised delivery date
+
+**Performance indicators:**
+- **`sales`**: Gross quarterly revenue generated before platform commission (denominated in R$)
+- **`median_approve_time`**: Median time interval between order receipt and seller approval
+- **`median_review_score`**: Median customer satisfaction rating on a scale of 0-5
+
+**Seller characteristics:**
+- **`tenure`**: Cumulative months the seller has been active on the platform
+- **`n_months_active_quarter`**: Number of months with activity within the analyzed quarter (range: 1-3)
+- **`last_month_active_quarter`**: Final month of activity within the quarter (values: 1, 2, or 3)
+- **`seller_city`** and **`seller_state`**: Geographical location identifiers for the seller
+
+
 
 ## 7.3. Outlier Handling
 
